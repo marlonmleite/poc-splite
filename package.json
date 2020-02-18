@@ -11,8 +11,8 @@
     "react-scripts": "3.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "node ./tasks/cli.js --template=ipdv && react-scripts start",
+    "start:parceiro": "node ./tasks/cli.js --template=parceiro && react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:ipdv": "node ./tasks/cli.js --template=ipdv && npm run build",
